@@ -10,7 +10,137 @@
 </head>
 
 <body>
+    <header>
+        <div class="logo">Your <span>Style</span></div>
+        <div class="site-info">photos / films</div>
+        <nav class="menu">
+            <div class="menu-item">projects</div>
+            <div class="menu-item">about</div>
+            <div class="menu-item">contact</div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="view">// view all projects</div>
+        <div class="wrapper-img">
+            <div class="box"></div>
+            <img src="../1-LangdingPage/images/hero.jpg" alt="">
+        </div>
+        <div class="wrapper-text">
+            <div class="title">Picture of the year</div>
+            <div class="pages">
+                <div class="num"><span>1</span> - 05</div>
+            </div>
+        </div>
+        <div class="circle-shape"></div>
+        <div class="blocks">
+            <div class="block-1 block">S</div>
+            <div class="block-2 block">T</div>
+            <div class="block-3 block">Y</div>
+            <div class="block-4 block">L</div>
+            <div class="block-5 block">E</div>
+        </div>
+        <ul class="media">
+            <li>facebook</li>
+            <li>youtue</li>
+            <li>instagram</li>
+        </ul>
+    </div>
 
+    <script>
+        TweenMax.to(".block-1", 2, {
+            x: "-220",
+            y: "-200",
+            scale: "2.4",
+            ease: Expo.easeInOut,
+        });
+
+        TweenMax.to(".block-2", 2, {
+            x: "-220",
+            y: "200",
+            scale: "1.2",
+            ease: Expo.easeInOut,
+        });
+
+        TweenMax.to(".block-3", 2, {
+            x: "300",
+            y: "-240",
+            scale: "1.4",
+            ease: Expo.easeInOut,
+        });
+
+        TweenMax.to(".block-4", 2, {
+            x: "-170",
+            y: "340",
+            scale: "0.8",
+            ease: Expo.easeInOut,
+        });
+        TweenMax.to(".block-5", 2, {
+            x: "400",
+            y: "200",
+            scale: "1.8",
+            ease: Expo.easeInOut,
+        });
+
+        TweenMax.to(".box", 2.4, {
+            y: "-100%",
+            ease: Expo.easeInOut,
+        });
+        TweenMax.from(".circle-shape", 2.4, {
+            scale: "0",
+            ease: Expo.easeInOut,
+        });
+        TweenMax.from(".logo", 1.6, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut,
+            delay: 0.6,
+        });
+        TweenMax.from(".site-info", 1.6, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut,
+            delay: 0.8,
+        });
+        TweenMax.from(".view", 1.6, {
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut,
+            delay: 0.6,
+        });
+        TweenMax.from(".navbar > div", 1.6, {
+            opacity: 0,
+            y: 60,
+            ease: Expo.easeInOut,
+            delay: 0.6,
+        });
+        TweenMax.staggerFrom(
+            ".menu > div",
+            1, {
+                opacity: 0,
+                y: 60,
+                ease: Power2.easeOut,
+            },
+            0.2
+        );
+        TweenMax.staggerFrom(
+            ".media > li",
+            1.4, {
+                opacity: 0,
+                y: 60,
+                ease: Power2.easeOut,
+            },
+            0.2
+        );
+        TweenMax.staggerFrom(
+            ".wrapper-text > div",
+            1.8, {
+                opacity: 0,
+                y: 190,
+                ease: Power2.easeOut,
+            },
+            0.6
+        );
+    </script>
 </body>
 
 </html>
